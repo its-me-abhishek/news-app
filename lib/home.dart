@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/search.dart';
 import 'news_page.dart';
 import 'backend.dart';
 
@@ -21,7 +22,20 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('News App'),
+        title: Text('News App',
+        style: TextStyle(
+            fontSize: 30,
+          ),
+        ),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {
+              // Open a search screen or perform search logic
+            },
+          ),
+        ],
       ),
       body: FutureBuilder<List<Map<String, String>>>(
         future: headlines,
