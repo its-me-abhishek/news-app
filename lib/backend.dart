@@ -2,14 +2,17 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class NewsApi {
-  final String apiKey; // Your News API key
+  final String apiKey;
 
   NewsApi(this.apiKey);
 
-  Future<List<Map<String, String>>> getTopHeadlines() async {
-    final response = await http.get(
-      Uri.parse('https://newsapi.org/v2/top-headlines?country=us&apiKey=$apiKey'),
-    );
+  Future<List<Map<String, String>>> getTopHeadlines({String? country}) async {
+    String url = 'https://newsapi.org/v2/top-headlines?apiKey=$apiKey';
+    if (country != null) {
+      url += '&country=$country';
+    }
+
+    final response = await http.get(Uri.parse(url));
 
     if (response.statusCode == 200) {
       final Map<String, dynamic> data = jsonDecode(response.body);
@@ -20,6 +23,7 @@ class NewsApi {
           'title': article['title'].toString(),
           'description': article['description'].toString(),
           'content': article['content'].toString(),
+          'urlToImage': article['urlToImage'].toString(),
         };
       }).toList();
     } else {

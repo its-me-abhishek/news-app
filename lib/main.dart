@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/home.dart';
+import 'package:news/categories.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
+      theme: ThemeData.dark(
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: CategoriesPage(),
     );
   }
 }
