@@ -21,7 +21,7 @@ This Flutter project is a news app that fetches and displays top headlines using
 
 1. Clone the repository: <br>
    ```git clone https://github.com/its-me-abhishek/news-app.git```
-3. Change into the project directory:
+3. Change into the project directory: <br>
    ```cd news-app```
-4. Run the app
+4. Run the app <br>
    ```flutter run```
