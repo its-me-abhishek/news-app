@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/search.dart';
 import 'about.dart';
 import 'backend.dart';
 import 'news_page.dart';
@@ -35,7 +36,12 @@ class _CategoriesPageState extends State<CategoriesPage> {
             icon: Icon(Icons.search),
             onPressed: () {
               // Open a search screen or perform search logic
-              // TODO
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SearchPage(),
+                ),
+              );
             },
           ),
         ],
@@ -55,13 +61,20 @@ class _CategoriesPageState extends State<CategoriesPage> {
                 return Card(
                   margin: EdgeInsets.all(8.0),
                   child: ListTile(
-                    title: Text(newsHeadlines[index]['title'] ?? '', style: TextStyle(fontSize: 20),),
-                    subtitle: Text(newsHeadlines[index]['description'] ?? '', style: TextStyle(fontSize: 15),),
+                    title: Text(
+                      newsHeadlines[index]['title'] ?? '',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    subtitle: Text(
+                      newsHeadlines[index]['description'] ?? '',
+                      style: TextStyle(fontSize: 15),
+                    ),
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => NewsDetailPage(newsData: newsHeadlines[index]),
+                          builder: (context) =>
+                              NewsDetailPage(newsData: newsHeadlines[index]),
                         ),
                       );
                     },
