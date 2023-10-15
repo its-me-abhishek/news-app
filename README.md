@@ -1,16 +1,27 @@
-# news
+# Flutter News App
 
-A new Flutter project.
+This is a simple Flutter News App that displays top headlines from various countries.
+
+## About
+
+This Flutter project is a news app that fetches and displays top headlines using the [News API](https://newsapi.org/). Users can select different countries to view headlines from.
+
+## Features
+
+- View top headlines from various countries.
+- Select a country to see headlines specific to that country.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Make sure you have Flutter installed. If not, follow the [official installation guide](https://flutter.dev/docs/get-started/install).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository: <br>
+   ```git clone https://github.com/its-me-abhishek/news-app.git```
+3. Change into the project directory: <br>
+   ```cd news-app```
+4. Run the app <br>
+   ```flutter run```
