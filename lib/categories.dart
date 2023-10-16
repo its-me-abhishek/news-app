@@ -141,7 +141,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                       _updateCountry('za');
                       Navigator.pop(context);
                     },
-                    child: Text('South Africe'),
+                    child: Text('South Africa'),
                   ),
                   ElevatedButton(
                     onPressed: () {
