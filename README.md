@@ -23,7 +23,8 @@ An elegant Flutter app that brings you the latest headlines from around the worl
 ![3](https://github.com/its-me-abhishek/news-app/assets/114338679/fdfa6e93-d0b0-41d5-883d-7429acbb9b29)
 
 ### News Search
-![4](https://github.com/its-me-abhishek/news-app/assets/114338679/6e9b6e5f-d806-427e-b060-42c18a5729f4)
+![4](https://github.com/its-me-abhishek/news-app/assets/114338679/2100094c-c2ea-48d1-89c2-f8d8b6bf8f9d)
+
 
 ## 🛠️ Technologies Used
 
