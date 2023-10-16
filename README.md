@@ -14,17 +14,16 @@ An elegant Flutter app that brings you the latest headlines from around the worl
 ## 📸 Screenshots
 
 ### Home Page
-![1](https://github.com/its-me-abhishek/news-app/assets/114338679/99a2692f-af18-4d8a-909d-d973a559a7ba)
+<img src="https://github.com/its-me-abhishek/news-app/assets/114338679/99a2692f-af18-4d8a-909d-d973a559a7ba" height="500">
 
 ### Select Country
-![2](https://github.com/its-me-abhishek/news-app/assets/114338679/41080e1c-6380-4100-82c9-5c9ffc1e7940)
+<img src="https://github.com/its-me-abhishek/news-app/assets/114338679/41080e1c-6380-4100-82c9-5c9ffc1e7940" height="500">
 
 ### News Detail 
-![3](https://github.com/its-me-abhishek/news-app/assets/114338679/fdfa6e93-d0b0-41d5-883d-7429acbb9b29)
+<img src="https://github.com/its-me-abhishek/news-app/assets/114338679/fdfa6e93-d0b0-41d5-883d-7429acbb9b29" height="500">
 
 ### News Search
-![4](https://github.com/its-me-abhishek/news-app/assets/114338679/a3235d06-2cea-4550-a91d-420bb51b6687)
-
+<img src="https://github.com/its-me-abhishek/news-app/assets/114338679/a3235d06-2cea-4550-a91d-420bb51b6687" height="500">
 
 ## 🛠️ Technologies Used
 
