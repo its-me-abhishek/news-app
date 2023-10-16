@@ -96,84 +96,84 @@ class _CategoriesPageState extends State<CategoriesPage> {
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('in'); // INDIA
+                      _updateCountry('in');
                       Navigator.pop(context);
                     },
                     child: Text('India'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('us'); // United States
+                      _updateCountry('us');
                       Navigator.pop(context);
                     },
                     child: Text('United States'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('sg'); // Singapore
+                      _updateCountry('sg');
                       Navigator.pop(context);
                     },
                     child: Text('Singapore'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('ar'); // INDIA
+                      _updateCountry('ar');
                       Navigator.pop(context);
                     },
                     child: Text('Argentina'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('gr'); // United States
+                      _updateCountry('gr');
                       Navigator.pop(context);
                     },
                     child: Text('Greece'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('nl'); // Singapore
+                      _updateCountry('nl');
                       Navigator.pop(context);
                     },
                     child: Text('Netherlands'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('za'); // INDIA
+                      _updateCountry('za');
                       Navigator.pop(context);
                     },
                     child: Text('South Africe'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('Au'); // United States
+                      _updateCountry('Au');
                       Navigator.pop(context);
                     },
                     child: Text('Australia'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('at'); // Singapore
+                      _updateCountry('at');
                       Navigator.pop(context);
                     },
                     child: Text('Austria'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('be'); // INDIA
+                      _updateCountry('be');
                       Navigator.pop(context);
                     },
                     child: Text('Belgium'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('br'); // United States
+                      _updateCountry('br');
                       Navigator.pop(context);
                     },
                     child: Text('Brazil'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('ca'); // Singapore
+                      _updateCountry('ca');
                       Navigator.pop(context);
                     },
                     child: Text('Canada'),

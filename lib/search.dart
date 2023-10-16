@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'backend.dart';
 import 'news_page.dart';
+
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
 
@@ -16,20 +17,29 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('News Search'),
+        toolbarHeight: 75,
+        centerTitle: true,
+        title: const Text(
+          'News Search',
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: Column(
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
+              autofocus: true,
               cursorWidth: 0,
               controller: _searchController,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(50),
                 ),
-                hintText: 'Search News...',
+                hintText: '     Search News...',
                 suffixIcon: IconButton(
                   icon: Icon(Icons.search),
                   onPressed: () {
@@ -81,13 +91,17 @@ class _SearchPageState extends State<SearchPage> {
     final String query = _searchController.text.trim();
     if (query.isNotEmpty) {
       try {
-        final NewsApi newsApi = NewsApi('ed6340c9d0984bc6abaca8cb751fe2dc'); // Replace with your actual API key
-        final List<Map<String, String>> results = await newsApi.getTopHeadlines(q: query);
+        final NewsApi newsApi = NewsApi(
+            'ed6340c9d0984bc6abaca8cb751fe2dc');
+        final List<Map<String, String>> results =
+            await newsApi.getTopHeadlines(q: query);
         setState(() {
           _searchResults = results
               .where((news) =>
-          news['title']!.toLowerCase().contains(query.toLowerCase()) ||
-              news['description']!.toLowerCase().contains(query.toLowerCase()))
+                  news['title']!.toLowerCase().contains(query.toLowerCase()) ||
+                  news['description']!
+                      .toLowerCase()
+                      .contains(query.toLowerCase()))
               .toList();
         });
       } catch (e) {
@@ -99,5 +113,4 @@ class _SearchPageState extends State<SearchPage> {
       });
     }
   }
-
 }
