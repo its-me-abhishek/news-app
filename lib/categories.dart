@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:news/search.dart';
-import 'about.dart';
 import 'backend.dart';
 import 'news_page.dart';
 
@@ -24,6 +23,8 @@ class _CategoriesPageState extends State<CategoriesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 75,
+        centerTitle: true,
         title: Text(
           'News App',
           style: TextStyle(
@@ -35,7 +36,6 @@ class _CategoriesPageState extends State<CategoriesPage> {
           IconButton(
             icon: Icon(Icons.search),
             onPressed: () {
-              // Open a search screen or perform search logic
               Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -96,7 +96,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      _updateCountry('in'); // iNDIA
+                      _updateCountry('in'); // INDIA
                       Navigator.pop(context);
                     },
                     child: Text('India'),
@@ -115,6 +115,69 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     },
                     child: Text('Singapore'),
                   ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _updateCountry('ar'); // INDIA
+                      Navigator.pop(context);
+                    },
+                    child: Text('Argentina'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _updateCountry('gr'); // United States
+                      Navigator.pop(context);
+                    },
+                    child: Text('Greece'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _updateCountry('nl'); // Singapore
+                      Navigator.pop(context);
+                    },
+                    child: Text('Netherlands'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _updateCountry('za'); // INDIA
+                      Navigator.pop(context);
+                    },
+                    child: Text('South Africe'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _updateCountry('Au'); // United States
+                      Navigator.pop(context);
+                    },
+                    child: Text('Australia'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _updateCountry('at'); // Singapore
+                      Navigator.pop(context);
+                    },
+                    child: Text('Austria'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _updateCountry('be'); // INDIA
+                      Navigator.pop(context);
+                    },
+                    child: Text('Belgium'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _updateCountry('br'); // United States
+                      Navigator.pop(context);
+                    },
+                    child: Text('Brazil'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      _updateCountry('ca'); // Singapore
+                      Navigator.pop(context);
+                    },
+                    child: Text('Canada'),
+                  ),
                 ],
               ),
             ),
@@ -125,7 +188,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
     );
   }
 
-  void _updateCountry(String newCountry) {
+void _updateCountry(String newCountry) {
     setState(() {
       selectedCountry = newCountry;
       headlines = newsApi.getTopHeadlines(country: selectedCountry);
