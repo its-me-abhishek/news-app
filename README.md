@@ -36,13 +36,17 @@ An elegant Flutter app that brings you the latest headlines from around the worl
 1. **Clone the Repository:**
 
    ```git clone https://github.com/ita-me-abhishek/news-app.git```
-   ```cd flutter-news-app```
+
+
+   ```cd news-app```
 
 
 ## 🌟 Acknowledgements
 
 Special thanks to [News API](https://newsapi.org/) for providing the latest news data.
 
+## 🗒️ TODO
+Currently improving the overall UI/UX of the application.
 
 ## Made with ❤️ by Abhishek
 
