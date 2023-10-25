@@ -26,6 +26,7 @@ class NewsApi {
           'title': article['title'].toString(),
           'description': article['description'].toString(),
           'content': article['content'].toString(),
+          'category': article['category'].toString(),
           'urlToImage': article['urlToImage'].toString(),
         };
       }).toList();

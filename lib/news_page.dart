@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NewsDetailPage extends StatelessWidget {
   final Map<String, String> newsData;
@@ -34,12 +35,21 @@ class NewsDetailPage extends StatelessWidget {
             SizedBox(height: 20),
             Text(
               '${newsData['title']}',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 25,
+                fontFamily: GoogleFonts.notoSerif().fontFamily,
+                fontWeight: FontWeight.w500,
+              ),
             ),
             SizedBox(height: 20),
             Text(
               '${newsData['description']}',
-              style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
+              style: TextStyle(
+                fontSize: 20,
+                fontStyle: FontStyle.italic,
+                fontFamily: GoogleFonts.notoSerif().fontFamily,
+                fontWeight: FontWeight.w400,
+              ),
               overflow: TextOverflow.ellipsis,
               maxLines: 10,
             ),

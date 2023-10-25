@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/search.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'backend.dart';
 import 'news_page.dart';
 
@@ -28,8 +29,11 @@ class _CategoriesPageState extends State<CategoriesPage> {
         title: Text(
           'News App',
           style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
+            color: Colors.black,
+            fontSize: 35,
+            fontWeight: FontWeight.w600,
+            fontFamily: GoogleFonts.notoSans().fontFamily,
+            height: 0.05,
           ),
         ),
         actions: [
@@ -63,7 +67,12 @@ class _CategoriesPageState extends State<CategoriesPage> {
                   child: ListTile(
                     title: Text(
                       newsHeadlines[index]['title'] ?? '',
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontFamily: GoogleFonts.notoSerif().fontFamily,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                     subtitle: Text(
                       newsHeadlines[index]['description'] ?? '',
@@ -188,7 +197,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
     );
   }
 
-void _updateCountry(String newCountry) {
+  void _updateCountry(String newCountry) {
     setState(() {
       selectedCountry = newCountry;
       headlines = newsApi.getTopHeadlines(country: selectedCountry);

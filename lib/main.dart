@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.lightBlueAccent,
-          brightness: Brightness.dark,
+          brightness: Brightness.light,
         ),
       ),
       home: CategoriesPage(),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'backend.dart';
 import 'news_page.dart';
 
@@ -22,8 +23,10 @@ class _SearchPageState extends State<SearchPage> {
         title: const Text(
           'News Search',
           style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
+            color: Colors.black,
+            fontSize: 35,
+            fontWeight: FontWeight.w600,
+            height: 0.05,
           ),
         ),
       ),
