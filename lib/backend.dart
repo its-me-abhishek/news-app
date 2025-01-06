@@ -6,16 +6,20 @@ class NewsApi {
 
   NewsApi(this.apiKey);
 
-  Future<List<Map<String, String>>> getTopHeadlines({String? country, String? q}) async {
-    String url = 'https://newsapi.org/v2/top-headlines?apiKey=$apiKey';
+  Future<List<Map<String, String>>> getTopHeadlines(
+      {String? country, String? q}) async {
+    String url = 'https://newsapi.org/v2/top-headlines?language=en';
     if (country != null) {
-      url += '&country=$country';
+      url += '&q=$country+news';
     }
     if (q != null) {
       url += '&q=$q';
     }
+    url += '&apiKey=$apiKey';
+    print(url);
 
     final response = await http.get(Uri.parse(url));
+    print('API Response: ${response.body}');
 
     if (response.statusCode == 200) {
       final Map<String, dynamic> data = jsonDecode(response.body);
@@ -34,5 +38,4 @@ class NewsApi {
       throw Exception('Failed to load top headlines');
     }
   }
-
 }

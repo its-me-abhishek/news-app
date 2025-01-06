@@ -29,7 +29,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
         title: Text(
           'News App',
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontSize: 35,
             fontWeight: FontWeight.w600,
             fontFamily: GoogleFonts.notoSans().fontFamily,
@@ -68,7 +68,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     title: Text(
                       newsHeadlines[index]['title'] ?? '',
                       style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.white,
                         fontSize: 20,
                         fontFamily: GoogleFonts.notoSerif().fontFamily,
                         fontWeight: FontWeight.w500,
